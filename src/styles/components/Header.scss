@@ -1,0 +1,67 @@
+/* MOBILE - MOBILE FIRST (max-width: 480px) */
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 47px;
+  width: 89%;
+  margin: 0 auto;
+
+  .logo {
+    height: 100%;
+  }
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    width: 42%;
+    text-transform: uppercase;
+    .homelink {
+      &:hover {
+        text-decoration: underline 1px;
+        text-underline-offset: 2px;
+      }
+    }
+    .aboutlink {
+      &:hover {
+        text-decoration: underline 1px;
+        text-underline-offset: 2px;
+      }
+    }
+  }
+}
+
+/* TABLETTE (min-width: 481px / max-width: 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .headerContainer {
+    height: 55px;
+    .navigation {
+      text-transform: none;
+      font-size: 18px;
+      max-width: 220px;
+      .homeLink:hover,
+      .homeLink:active {
+        text-decoration: underline 1px;
+        text-underline-offset: 2px;
+      }
+      .aboutLink:hover,
+      .aboutLink:active {
+        text-decoration: underline 1px;
+        text-underline-offset: 2px;
+      }
+    }
+  }
+}
+
+/* DEKSTOP (min-width: 769px / max-width: 1024px) */
+@media screen and (min-width: 769px) {
+  .headerContainer {
+    height: 68px;
+    max-width: 1240px;
+    .navigation {
+      text-transform: none;
+      font-size: 24px;
+      max-width: 309px;
+    }
+  }
+}
