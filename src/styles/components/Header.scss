@@ -6,7 +6,6 @@
   height: 47px;
   width: 89%;
   margin: 20px;
-
   .logo {
     height: 100%;
   }
@@ -35,7 +34,6 @@
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .headerContainer {
     height: 55px;
-    margin: 40px auto;
     .navigation {
       text-transform: none;
       font-size: 18px;
@@ -57,9 +55,8 @@
 /* DEKSTOP (min-width: 769px / max-width: 1024px) */
 @media screen and (min-width: 769px) {
   .headerContainer {
-    height: 68px;
+    height: 70px;
     max-width: 1240px;
-    margin: 40px auto;
     .navigation {
       text-transform: none;
       font-size: 24px;

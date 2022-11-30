@@ -3,19 +3,11 @@
 
 /* MOBILE - MOBILE FIRST (max-width: 480px) */
 .display_home {
-  margin: 1rem;
-  /* TABLETTE (min-width: 768px) */
-  @media screen and (min-width: 768px) {
-    margin: 2rem;
-  }
+  margin-top: 16px;
   /* DEKSTOP (min-width: 900px) */
   @media screen and (min-width: 900px) {
-    margin: 3rem;
+    margin-top: 63px;
   }
-  @media screen and (min-width: 1440px) {
-    margin: 5rem;
-  }
-
   .banner_container {
     .backgroundImgHome {
       object-fit: cover;
