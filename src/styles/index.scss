@@ -3,9 +3,12 @@
 @import "./utils/mixins";
 
 // Page globale SCSS
-@import "./page.scss";
+@import "./page_global.scss";
 
 /* Page Exporter pour les SCSS */
+@import "./pages/Home.scss";
 
 /* Styles Components */
 @import "./components/Header.scss";
+@import "./components/Footer.scss";
+@import "./components/Banner.scss";

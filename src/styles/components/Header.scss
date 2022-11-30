@@ -1,11 +1,11 @@
 /* MOBILE - MOBILE FIRST (max-width: 480px) */
 .headerContainer {
-  display: flex;
+  display: flex; // Flexbox
   justify-content: space-between;
   align-items: center;
   height: 47px;
   width: 89%;
-  margin: 0 auto;
+  margin: 20px;
 
   .logo {
     height: 100%;
@@ -15,11 +15,11 @@
     justify-content: space-between;
     font-size: 12px;
     width: 42%;
-    text-transform: uppercase;
+    text-transform: uppercase; // tous les caractères seront écrits en capitales.
     .homelink {
       &:hover {
-        text-decoration: underline 1px;
-        text-underline-offset: 2px;
+        text-decoration: underline 1px; // Ligne en desssous
+        text-underline-offset: 2px; // Espace entre la ligne et le texte
       }
     }
     .aboutlink {
@@ -35,6 +35,7 @@
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .headerContainer {
     height: 55px;
+    margin: 40px auto;
     .navigation {
       text-transform: none;
       font-size: 18px;
@@ -58,6 +59,7 @@
   .headerContainer {
     height: 68px;
     max-width: 1240px;
+    margin: 40px auto;
     .navigation {
       text-transform: none;
       font-size: 24px;
