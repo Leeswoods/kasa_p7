@@ -6,6 +6,9 @@ import PropTypes from "prop-types";
 // La méthode map() crée un nouveau tableau avec les résultats de l'appel d'une fonction fournie sur chaque élément du tableau appelant.
 // Key : Les clés aident React à identifier quels éléments d’une liste ont changé, ont été ajoutés ou supprimés. Vous devez donner une clé à chaque élément dans un tableau afin d’apporter aux éléments une identité stable
 
+// Affichage de chaque appartement avec la méthode map appliquée au fichier .json contenant la liste des appartements
+// Création d'un lien sur chaque card renvoyant vers l'appartement associé à la card avec Link
+
 const Card = () => {
   return (
     <div className="card_container">

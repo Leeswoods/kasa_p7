@@ -10,15 +10,24 @@ const Header = () => {
       <img className="logo" src={Logo} alt="Kasa logo" />
       <ul className="navigation">
         <li>
-          {/* To sert à indiquer la route de la navigation */}
-          <NavLink to="/" className="homelink">
+          <NavLink
+            to="/"
+            end
+            className={({ isActive }) =>
+              isActive ? "accueil_navbar active" : "accueil_navbar"
+            }
+          >
             Accueil
           </NavLink>
         </li>
         <li>
-          {/* To sert à indiquer la route de la navigation */}
-          <NavLink to="/about" className="aboutlink">
-            A propos
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              isActive ? "about_navbar active" : "about_navbar"
+            }
+          >
+            A Propos
           </NavLink>
         </li>
       </ul>
@@ -27,3 +36,16 @@ const Header = () => {
 };
 
 export default Header;
+
+//         <li>
+//   {/* To sert à indiquer la route de la navigation */}
+//   <NavLink to="/" className="homelink">
+//     Accueil
+//   </NavLink>
+// </li>
+// <li>
+//   {/* To sert à indiquer la route de la navigation */}
+//   <NavLink to="/about" className="aboutlink">
+//     A propos
+//   </NavLink>
+// </li>
