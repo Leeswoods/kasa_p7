@@ -1,0 +1,23 @@
+// Variables
+@import "../utils/variables";
+
+/* MOBILE - MOBILE FIRST (max-width: 480px) */
+.display_about {
+  margin-top: 16px;
+  /* DEKSTOP (min-width: 769px / max-width: 1024px) */
+  @media screen and (min-width: 900px) {
+    margin-top: 63px;
+  }
+  .banner_container {
+    height: 225px;
+
+    .backgroundImgHome {
+      object-fit: cover;
+      object-position: 100% 50%;
+      /* DEKSTOP (min-width: 769px / max-width: 1024px) */
+      @media screen and (min-width: 900px) {
+        object-position: 50% 25%;
+      }
+    }
+  }
+}
