@@ -1,9 +1,10 @@
 // Importation Package, composants, image, data
 import React from "react";
 import Banner from "../components/Banner";
+import Collapse from "../components/Collapse";
 import BGBannerAbout from "../assets/a_propos_bg_bannière.png";
 import "../styles/pages/About.scss";
-// import DataAbout from "../data/about.json";
+import DataAbout from "../data/about.json";
 
 // Mise en place de la page About de l'application, qui contient les composants "Banner" et "Collapse"
 
@@ -15,6 +16,17 @@ const About = () => {
   return (
     <main className="display_about">
       <Banner img={BGBannerAbout} />
+      <div className="display_collapses">
+        {DataAbout.map((index) => (
+          <div className="collapsesContainer">
+            <Collapse
+              key={index.id}
+              title={index.title}
+              content={index.content}
+            />
+          </div>
+        ))}
+      </div>
     </main>
   );
 };

@@ -4,7 +4,7 @@
 /* MOBILE - MOBILE FIRST (max-width: 480px) */
 .display_about {
   margin-top: 16px;
-  /* DEKSTOP (min-width: 769px / max-width: 1024px) */
+  /* DEKSTOP (min-width: 900px) */
   @media screen and (min-width: 900px) {
     margin-top: 63px;
   }
@@ -14,10 +14,26 @@
     .backgroundImgHome {
       object-fit: cover;
       object-position: 100% 50%;
-      /* DEKSTOP (min-width: 769px / max-width: 1024px) */
+      /* DEKSTOP (min-width: 900px) */
       @media screen and (min-width: 900px) {
         object-position: 50% 25%;
       }
+    }
+  }
+}
+
+.display_collapses {
+  margin: 19px 0;
+  /* DEKSTOP (min-width: 900px) */
+  @media screen and (min-width: 900px) {
+    margin: 31px 0;
+  }
+
+  .collapsesContainer {
+    margin-bottom: 20px;
+    /* DEKSTOP (min-width: 900px) */
+    @media screen and (min-width: 900px) {
+      margin-bottom: 33px;
     }
   }
 }
