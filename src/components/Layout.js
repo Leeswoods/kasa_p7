@@ -1,9 +1,12 @@
+// Importation Package, composants, style
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "../styles/components/Layout.scss";
 
 //  Mise en place du Layout, constitué des composants "Header" et "Footer" et appelé une fois pour toutes dans le composant général index.js
+
+// Le rops.children permet d'afficher toutes les autres pages ; entre notre Header et Footer
 const Layout = (props) => {
   return (
     <div className="body">

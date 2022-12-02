@@ -1,12 +1,17 @@
+// Importation Package, date logement
 import React from "react";
-import { Link } from "react-router-dom"; // <Link>est un élément qui permet à l'utilisateur de naviguer vers une autre page en cliquant ou en appuyant dessus.
+// <Link>est un élément qui permet à l'utilisateur de naviguer vers une autre page en cliquant ou en appuyant dessus.
+import { Link } from "react-router-dom";
 import DataProperty from "../data/logements.json";
 import PropTypes from "prop-types";
 
 // La méthode map() crée un nouveau tableau avec les résultats de l'appel d'une fonction fournie sur chaque élément du tableau appelant.
-// Key : Les clés aident React à identifier quels éléments d’une liste ont changé, ont été ajoutés ou supprimés. Vous devez donner une clé à chaque élément dans un tableau afin d’apporter aux éléments une identité stable
+// Key : Les clés aident React à identifier quels éléments d’une liste ont changé, ont été ajoutés ou supprimés.
+// Key : Vous devez donner une clé à chaque élément dans un tableau afin d’apporter aux éléments une identité stable
 
 // Affichage de chaque appartement avec la méthode map appliquée au fichier .json contenant la liste des appartements
+
+// Card Logique : Utilisation de Link (to = route) / img de chaque logements / titre de chaque logements
 // Création d'un lien sur chaque card renvoyant vers l'appartement associé à la card avec Link
 
 const Card = () => {

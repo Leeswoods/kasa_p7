@@ -1,3 +1,4 @@
+// Importation Package, pages, etc...
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
@@ -5,6 +6,10 @@ import About from "./pages/About";
 import Logement from "./pages/Logement";
 import Error404 from "./pages/Error404";
 
+// Logique de routes : HOME / ABOUT / LOGEMENT / ERROR
+// Utilisation de React Router
+
+// Fonction App qui va afficher tout ce notre code (HTML/CSS/JS) présents dans nos pages
 function App() {
   return (
     <div className="App">
