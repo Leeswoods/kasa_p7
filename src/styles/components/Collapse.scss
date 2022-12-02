@@ -52,7 +52,6 @@
     background-color: $grey-white-color;
     color: $primary-color;
     font-size: 12px;
-    height: 96px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     border-bottom-right-radius: $xs-radius;
@@ -63,7 +62,10 @@
     margin: 0;
     // La propriété word-break est utilisée pour définir la façon dont la césure s'applique pour les endroits où le texte dépasserait de sa boîte de contenu.
     word-break: break-word;
-
+    /* TABLETTE (min-width: 481px / max-width: 768px) */
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      padding: 0px 15px;
+    }
     /* ---------- SMALL SCREENS, LAPTOPS (min-width: 769px / max-width: 1024px) ---------- */
     @media screen and (min-width: 769px) and (max-width: 1024px) {
       font-size: 16px;
@@ -76,10 +78,20 @@
       border-bottom-left-radius: $mobile-radius;
     }
   }
-}
-
-// Animation au clic sur la flèche down/up de chaque collapse
-.animated {
-  opacity: 1;
-  transition: height 0.3s ease-in-out, opacity 0.3s 0.3s ease-in-out;
+  // Animation au clic sur la flèche down/up de chaque collapse
+  .animated {
+    opacity: 1;
+    transition: height 0.3s ease-in-out, opacity 0.3s 0.3s ease-in-out;
+  }
+  /* TABLETTE (min-width: 481px / max-width: 768px) */
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .collapse_content p {
+      padding: 22px 15px;
+      margin: 0;
+      pointer-events: none;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 17px;
+    }
+  }
 }

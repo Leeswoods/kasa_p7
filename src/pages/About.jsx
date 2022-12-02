@@ -18,9 +18,9 @@ const About = () => {
       <Banner img={BGBannerAbout} />
       <div className="display_collapses">
         {DataAbout.map((index) => (
-          <div className="collapsesContainer">
+          <div className="collapsesContainer" key={index}>
             <Collapse
-              key={index.id}
+              id={index.id}
               title={index.title}
               content={index.content}
             />
