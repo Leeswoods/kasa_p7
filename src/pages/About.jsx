@@ -17,12 +17,12 @@ const About = () => {
     <main className="display_about">
       <Banner img={BGBannerAbout} />
       <div className="display_collapses">
-        {DataAbout.map((index) => (
+        {DataAbout.map((collape, index) => (
           <div className="collapsesContainer" key={index}>
             <Collapse
-              id={index.id}
-              title={index.title}
-              content={index.content}
+              id={collape.id}
+              title={collape.title}
+              content={collape.content}
             />
           </div>
         ))}
