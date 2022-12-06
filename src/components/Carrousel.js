@@ -38,13 +38,9 @@ const Carrousel = ({ pictures }) => {
       {/* Affichage des flèches seulement si length > 1 */}
       {length > 1 && (
         // Affichage conditionnel de la flèche "précédent" en fonction du nombre d'images dans l'array pictures
-        <img
-          src={ArrowLeft} //Affichage des flèches seulement si length > 1
-          // Appel la fonction previousPicture au clique sur la flèche
-          onClick={previousPicture}
-          alt="flèche gauche"
-          className="leftArrow"
-        />
+        <div className="leftArrow" onClick={previousPicture}>
+          {ArrowLeft}
+        </div>
       )}
 
       {/* Conteur */}
@@ -53,13 +49,9 @@ const Carrousel = ({ pictures }) => {
       </div>
 
       {length > 1 && (
-        <img
-          src={ArrowRight}
-          alt="flèche droite"
-          // Appel la fonction nextPicture au clique sur la flèche
-          onClick={nextPicture}
-          className="rightArrow"
-        />
+        <div className="rightArrow" onClick={nextPicture}>
+          {ArrowRight}
+        </div>
       )}
     </div>
   );

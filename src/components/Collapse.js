@@ -21,8 +21,8 @@ const Collapse = ({ title, content }) => {
 
   // JSX
   return (
-    <div className="collapse_container">
-      <div className="collapse_title" onClick={display}>
+    <div className="container">
+      <div className="title" onClick={display}>
         <h3>{title}</h3>
         {/* Utilisation de L'opérateur conditionnel dans la div pour afficher l'icône qui correspond à la situation */}
         {/* condition ? exprSiVrai : exprSiFaux */}
@@ -31,7 +31,7 @@ const Collapse = ({ title, content }) => {
       </div>
       <div>
         {text && (
-          <div className="collapse_content animated">
+          <div className="content animated">
             <p>{content}</p>
           </div>
         )}

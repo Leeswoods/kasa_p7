@@ -2,8 +2,8 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import About from "./pages/About";
 import Logement from "./pages/Logement";
+import About from "./pages/About";
 import Error404 from "./pages/Error404";
 
 // Logique de routes : HOME / ABOUT / LOGEMENT / ERROR
@@ -18,7 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
 
         {/* Route vers chacune des pages appartement */}
-        <Route path="/logement:id" element={<Logement />} />
+        <Route path="/logement/:id" element={<Logement />} />
 
         {/* Route vers la page "À propos" */}
         <Route path="/about" element={<About />} />

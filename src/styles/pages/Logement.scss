@@ -1,0 +1,44 @@
+/* ---------- MOBILE-FIRST (max-width: 480px) ---------- */
+
+.collapseContainer {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* ---------- IPAD, TABLETS (min-width: 481px / max-width: 768px) ---------- */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .collapsesContainer {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    column-gap: 8%;
+    .collapse {
+      width: 100%;
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+/* ---------- SMALL SCREENS, LAPTOPS (min-width: 769px / max-width: 1024px) ---------- */
+
+/* ---------- DESKTOP, LARGE SCREENS (min-width: 1025px / max-width: 1200px) ---------- */
+
+@media screen and (min-width: 1025px) {
+  .collapsesContainer {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    column-gap: 8%;
+    .collapse {
+      width: 100%;
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}

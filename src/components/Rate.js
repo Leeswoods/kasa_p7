@@ -22,15 +22,14 @@ const Rate = ({ rating }) => {
       // Si le nombre correspondant à rangeElem est plus petit ou égal au chiffre contenu dans la prop rating,
       // on affiche le nombre d'étoiles rouge équivalent
       level <= rating ? (
-        <img src={star} alt="étoile pleine" key={index} className="starIcon" />
+        <div key={index} className="starIcon">
+          {star}
+        </div>
       ) : (
         // La différence entre range et rating est affichée par des étoiles grises
-        <img
-          src={greyStar}
-          alt="étoile vide"
-          key={index}
-          className="starIcon"
-        />
+        <div key={index} className="starIcon">
+          {greyStar}
+        </div>
       )
     )
   );

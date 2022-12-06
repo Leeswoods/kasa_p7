@@ -7,6 +7,7 @@
   cursor: pointer;
   width: 11.7px;
   height: 20px;
+  color: #ffffff;
 }
 
 @mixin desktopSliderArrow {
@@ -16,10 +17,17 @@
   cursor: pointer;
   width: 30px;
   height: 55px;
+  color: #ffffff;
 }
 
 @mixin desktopSliderArrowPosition {
   width: 47px;
   height: 79px;
   top: 39%;
+}
+
+@mixin flex-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }

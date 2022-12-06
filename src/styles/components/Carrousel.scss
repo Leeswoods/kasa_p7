@@ -2,7 +2,7 @@
 @import "../utils/mixins";
 
 .slider {
-  width: 90%;
+  width: 100%;
   height: 255px;
   margin: 0 auto;
   margin-top: 30px;
@@ -20,6 +20,18 @@
     @include mobileSliderArrow;
     left: 10px;
   }
+  & i {
+    font-size: 20px;
+    @media screen and (min-width: 550px) {
+      font-size: 40px;
+    }
+    @media screen and (min-width: 750px) {
+      font-size: 55px;
+    }
+    @media screen and (min-width: 900px) {
+      font-size: 80px;
+    }
+  }
   // En format mobile, le compteur de slides n'est pas affiché
   .slideCounter {
     opacity: 0;
@@ -28,11 +40,23 @@
     @include mobileSliderArrow;
     right: 10px;
   }
+  & i {
+    font-size: 20px;
+    @media screen and (min-width: 550px) {
+      font-size: 40px;
+    }
+    @media screen and (min-width: 750px) {
+      font-size: 55px;
+    }
+    @media screen and (min-width: 900px) {
+      font-size: 80px;
+    }
+  }
 }
 
-/* ---------- SMALL SCREENS, LAPTOPS (min-width: 769px / max-width: 1024px) ---------- */
+/* ---------- SMALL SCREENS, LAPTOPS (min-width: 768px / max-width: 1024px) ---------- */
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .slider {
     height: 415px;
     border-radius: $desktop-radius;
@@ -65,7 +89,7 @@
 
 @media screen and (min-width: 1025px) {
   .slider {
-    max-width: 1240px;
+    max-width: 100%;
     height: 415px;
     margin-bottom: 24px;
     .slideImg {
@@ -82,6 +106,7 @@
     }
     .leftArrow {
       @include desktopSliderArrowPosition;
+
       left: 23.3px;
     }
     .rightArrow {

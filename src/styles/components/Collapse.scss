@@ -3,18 +3,20 @@
 
 /* ---------- MOBILE-FIRST (max-width: 480px) ---------- */
 
-.collapse_container {
+.container {
   width: 100%;
   height: auto;
-  background: $grey-white-color;
-  border-radius: 5px;
-  margin: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 20px;
   @media screen and (min-width: 900px) {
     max-width: 1023px;
     border-radius: 10px;
   }
   /* ---------- MEDIA QUERIES - DESKTOP ---------- */
-  .collapse_title {
+  .title {
     background: $primary-color;
     border-radius: 5px;
     cursor: pointer; // Pointe le Cursor sur tout le container ; ressemblance à un lien
@@ -48,7 +50,7 @@
       }
     }
   }
-  .collapse_content {
+  .content {
     background-color: $grey-white-color;
     color: $primary-color;
     font-size: 12px;
@@ -85,7 +87,7 @@
   }
   /* TABLETTE (min-width: 481px / max-width: 768px) */
   @media screen and (min-width: 481px) and (max-width: 768px) {
-    .collapse_content p {
+    .content p {
       padding: 22px 15px;
       margin: 0;
       pointer-events: none;
