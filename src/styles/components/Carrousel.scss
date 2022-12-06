@@ -12,7 +12,7 @@
 
   .slideImg {
     width: 100%;
-    height: 255px;
+    height: 100%;
     object-fit: cover;
     border-radius: $mobile-radius;
   }
@@ -62,7 +62,7 @@
     border-radius: $desktop-radius;
     margin-bottom: 24px;
     .slideImg {
-      height: 415px;
+      height: 100%;
       border-radius: $desktop-radius;
     }
     // En format desktop, le compteur de slides est affiché
@@ -93,7 +93,7 @@
     height: 415px;
     margin-bottom: 24px;
     .slideImg {
-      height: 415px;
+      height: 100%;
       border-radius: $desktop-radius;
     }
     .slideCounter {
