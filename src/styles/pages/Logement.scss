@@ -1,13 +1,23 @@
 /* ---------- MOBILE-FIRST (max-width: 480px) ---------- */
 
+.logement_equipement {
+  display: grid;
+}
 .collapseContainer {
   width: 100%;
   height: auto;
   margin: 0 auto;
+  .collapse {
+    width: 100%;
+    p,
+    span {
+      font-size: 18px;
+    }
+  }
 }
 
 /* ---------- IPAD, TABLETS (min-width: 481px / max-width: 768px) ---------- */
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 1024px) {
   .collapsesContainer {
     width: 100%;
     max-width: 100%;

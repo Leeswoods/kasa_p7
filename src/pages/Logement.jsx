@@ -40,12 +40,14 @@ const Logement = () => {
             <div className="collapse ">
               <Collapse title="Description" content={lodging.description} />
             </div>
-            <div className="collapse">
+            <div className="collapse equipement">
               <Collapse
                 title="Équipements"
                 // Utilisation de la méthode map afin de générer une balise <p> pour chaque équipement
                 content={lodging.equipments.map((equipment, index) => (
-                  <p key={index}>{equipment}</p>
+                  <span className="logement_equipement" key={index}>
+                    {equipment}
+                  </span>
                 ))}
               />
             </div>
