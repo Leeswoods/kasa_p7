@@ -1,0 +1,25 @@
+// Mixins
+
+@mixin mobileSliderArrow {
+  position: absolute;
+  top: 47%;
+  z-index: 1;
+  cursor: pointer;
+  width: 11.7px;
+  height: 20px;
+}
+
+@mixin desktopSliderArrow {
+  position: absolute;
+  top: 45%;
+  z-index: 1;
+  cursor: pointer;
+  width: 30px;
+  height: 55px;
+}
+
+@mixin desktopSliderArrowPosition {
+  width: 47px;
+  height: 79px;
+  top: 39%;
+}
