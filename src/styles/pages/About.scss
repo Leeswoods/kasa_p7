@@ -31,9 +31,18 @@
 
   .collapsesContainer {
     margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 33px;
+      width: 90%;
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
     /* DEKSTOP (min-width: 900px) */
     @media screen and (min-width: 900px) {
       margin-bottom: 33px;
+      width: 90%;
+      margin-left: 2rem;
+      margin-right: 2rem;
     }
   }
 }

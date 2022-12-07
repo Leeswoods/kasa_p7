@@ -36,7 +36,7 @@ const Logement = () => {
             host={lodging.host}
             rating={lodging.rating}
           />
-          <section className="collapsesContainer">
+          <section className="collapses_Container">
             <div className="collapse ">
               <Collapse title="Description" content={lodging.description} />
             </div>

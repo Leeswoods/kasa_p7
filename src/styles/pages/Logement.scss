@@ -3,7 +3,7 @@
 .logement_equipement {
   display: grid;
 }
-.collapseContainer {
+.collapses_Container {
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -11,14 +11,14 @@
     width: 100%;
     p,
     span {
-      font-size: 18px;
+      font-size: 12px;
     }
   }
 }
 
 /* ---------- IPAD, TABLETS (min-width: 481px / max-width: 768px) ---------- */
 @media screen and (min-width: 481px) and (max-width: 1024px) {
-  .collapsesContainer {
+  .collapses_Containerr {
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
@@ -33,12 +33,10 @@
   }
 }
 
-/* ---------- SMALL SCREENS, LAPTOPS (min-width: 769px / max-width: 1024px) ---------- */
+/* ---------- DESKTOP, LARGE SCREENS (min-width: 1024px) ---------- */
 
-/* ---------- DESKTOP, LARGE SCREENS (min-width: 1025px / max-width: 1200px) ---------- */
-
-@media screen and (min-width: 1025px) {
-  .collapsesContainer {
+@media screen and (min-width: 1024px) {
+  .collapses_Container {
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
@@ -46,7 +44,8 @@
     column-gap: 8%;
     .collapse {
       width: 100%;
-      p {
+      p,
+      span {
         font-size: 18px;
       }
     }

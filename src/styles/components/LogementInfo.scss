@@ -73,6 +73,7 @@
   .host {
     display: flex;
     align-items: center;
+    margin-left: 35px;
     .hostName {
       display: flex;
       width: min-content;
@@ -91,6 +92,45 @@
 /* ---------- SMALL SCREENS, LAPTOPS (min-width: 769px / max-width: 1024px) ---------- */
 
 @media screen and (min-width: 768px) {
+  .sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .logementInfos {
+      .logementTitle {
+        font-size: 20px;
+        line-height: 37px;
+      }
+      .logementLocation {
+        font-size: 16px;
+        line-height: 25.7px;
+      }
+    }
+    .hostAndRatingInfos {
+      display: flex;
+      flex-direction: column;
+      height: 120px;
+      .host {
+        margin-left: 5px;
+        .hostName {
+          font-size: 18px;
+        }
+        .hostPicture {
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
+        }
+      }
+      .rating {
+        margin-top: 0;
+        margin-bottom: 10px;
+        width: max-content;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
   .sections {
     display: flex;
     flex-direction: row;
