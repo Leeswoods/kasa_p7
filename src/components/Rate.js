@@ -2,7 +2,8 @@ import React from "react";
 import "../styles/utils/_variables.scss";
 import "../styles/components/Rate.scss";
 
-// Mise en place du composantt Rating qui va permettre de savoir le taux d'étoile dans une page logement
+// Mise en place du composantt Rate qui va permettre de savoir le taux d'étoile dans une page logement
+
 const Rate = ({ rating }) => {
   // Tableau d'étoiles
   const stars = [1, 2, 3, 4, 5];

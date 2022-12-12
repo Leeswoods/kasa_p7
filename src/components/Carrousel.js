@@ -7,6 +7,8 @@ import "../styles/components/Carrousel.scss";
 const ArrowRight = <i className="fa-solid fa-chevron-right"></i>;
 const ArrowLeft = <i className="fa-solid fa-chevron-left"></i>;
 
+// Créaction du Composant Carrousel, en cliquant sur la flèche de gauche ou droite pour afficher l'image
+
 const Carrousel = ({ pictures }) => {
   // Le hook useState permet de faire varier l'index de l'array pictures, état initial à 0
   const [current, setCurrent] = useState(0); // première image à 0

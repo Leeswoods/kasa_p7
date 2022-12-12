@@ -1,6 +1,9 @@
 // Importation Package, icon, style, etc...
 import React, { useState } from "react";
 import "../styles/components/Collapse.scss";
+
+// Composant Collaspe, en cliquant sur la flèche, elle change et affiche le texte du dessus.
+
 // Composant Collapse qui s'appuie sur les props "title" et "content" pour afficher son contenu
 // Title qui est le titre & content le contenue qui se trouve dans >data>about.json
 const Collapse = ({ title, content }) => {
