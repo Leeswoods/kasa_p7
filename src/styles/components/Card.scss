@@ -28,7 +28,7 @@
       height: 430px;
     }
     @media screen and (min-width: 510px) and (max-width: 539px) {
-      height: 450px;
+      height: 470px;
     }
     @media screen and (min-width: 540px) {
       height: 480px;
@@ -75,7 +75,7 @@
 
 /* ---------- TABLETTE SCREENS (max-width: 768px) ---------- */
 
-@media screen and (min-width: 580px) and (max-width: 768px) {
+@media screen and (min-width: 560px) and (max-width: 768px) {
   .card_container {
     max-width: 100%;
     width: 100%;
