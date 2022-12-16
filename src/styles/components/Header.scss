@@ -7,8 +7,8 @@
   justify-content: space-between;
   align-items: center;
   height: 47px;
-  width: 92%;
-  margin: 20px;
+  width: 96%;
+  margin: 8px;
   .logo {
     height: 100%;
   }
@@ -38,6 +38,7 @@
   .headerContainer {
     height: 55px;
     width: 94%;
+    margin: 20px;
     .navigation {
       text-transform: none;
       font-size: 18px;
@@ -52,6 +53,7 @@
     height: 70px;
     max-width: 100%;
     width: 96%;
+    margin: 20px;
     .navigation {
       text-transform: none;
       font-size: 24px;
